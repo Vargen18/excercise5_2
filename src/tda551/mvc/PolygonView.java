@@ -13,6 +13,8 @@ public class PolygonView extends JComponent {
 
     PolygonView(PolygonModel model){
         this.model = model;
+        this.frame = new JFrame();
+        frame.getContentPane().add(this);
     }
 
     @Override

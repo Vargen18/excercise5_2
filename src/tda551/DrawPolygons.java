@@ -35,7 +35,6 @@ public class DrawPolygons extends JComponent {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setBounds(30, 30, 300, 300);
 
-        frame.getContentPane().add(polygons);
         frame.setVisible(true);
 
         try {

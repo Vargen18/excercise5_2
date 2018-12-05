@@ -39,6 +39,6 @@ public class PolygonController {
     }
 
     public JFrame getFrame(){
-        view.getFrame();
+        return view.getFrame();
     }
 }
