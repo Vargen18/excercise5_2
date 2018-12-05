@@ -19,7 +19,7 @@ public class PolygonModel {
 
     }//constructor
 
-    void updateCenters(){
+    void updateCenters(int value){
         for (IPolygon p : polygons) {
             p.updateCenter(p.getCenter().x + value, p.getCenter().y + value); //model?
         }

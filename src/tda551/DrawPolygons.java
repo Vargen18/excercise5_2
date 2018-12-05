@@ -27,15 +27,14 @@ public class DrawPolygons extends JComponent {
 
     public static void main(String[] args) {
         PolygonController controller = new PolygonController();
-        PolygonModel model = new PolygonModel();
-        PolygonView view = new PolygonView();
 
         JFrame frame = new JFrame();
         DrawPolygons polygons = new DrawPolygons();
-        view.frame = frame;
+        frame = controller.getFrame();
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setBounds(30, 30, 300, 300);
+
         frame.getContentPane().add(polygons);
         frame.setVisible(true);
 

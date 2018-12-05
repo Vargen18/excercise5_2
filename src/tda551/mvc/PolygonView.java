@@ -1,18 +1,28 @@
 package tda551.mvc;
 
 import tda551.adapter.IPolygon;
+import tda551.shapes.Polygon;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class PolygonView extends JComponent {
 
-    public x frame;
+    private JFrame frame;
+    private PolygonModel model;
+
+    PolygonView(PolygonModel model){
+        this.model = model;
+    }
 
     @Override
     public void paint(Graphics g) {
-        for (IPolygon currentPolygon : polygons) {
+        for (IPolygon currentPolygon : model.polygons) {
             currentPolygon.paint(g);
         }
     }//paint
+
+    JFrame getFrame(){
+        return frame;
+    }
 }
